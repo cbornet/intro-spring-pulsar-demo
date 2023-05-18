@@ -6,6 +6,7 @@ import java.util.function.Function;
 import org.apache.pulsar.client.api.Message;
 import org.apache.pulsar.reactive.client.api.MessageResult;
 import org.apache.pulsar.reactive.client.api.MessageSpec;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import reactor.core.publisher.Flux;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import org.springframework.pulsar.reactive.config.annotation.ReactivePulsarListe
 import org.springframework.pulsar.reactive.core.ReactivePulsarTemplate;
 
 @SpringBootApplication
+@EnableFeignClients
 public class PulsarApplication {
 
 	public static void main(String[] args) {
